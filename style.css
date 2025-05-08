@@ -170,6 +170,16 @@ button:hover {
   border-radius: 10px;
 }
 
+.rapha {
+  text-decoration: none;
+  background-color: #e60045;
+  text-align: center;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
 .popup-content {
   background-color: var(--content-bg);
   padding: 2rem;
