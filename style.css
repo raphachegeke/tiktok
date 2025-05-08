@@ -166,6 +166,10 @@ button:hover {
   z-index: 999;
 }
 
+.trust-badge img {
+  border-radius: 10px;
+}
+
 .popup-content {
   background-color: var(--content-bg);
   padding: 2rem;
