@@ -1,0 +1,208 @@
+:root {
+  --primary-color: #ff0050;
+  --secondary-color: #e60045;
+  --bg-color: #111;
+  --content-bg: #222;
+  --accent-bg: #333;
+  --text-color: #fff;
+  --highlight-color: lightgreen;
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  background: var(--content-bg);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background: #1c1c1c;
+  color: var(--text-color);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--primary-color);
+  background-color: #222;
+  transition: 0.3s;
+}
+
+button {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.secure-note {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+#processing, #loading {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--accent-bg);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ccc;
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trust-badge, .verified-seal {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.trust-badge img, .verified-seal img {
+  width: 50px;
+  height: auto;
+}
+
+#testimonials, #success-stories, #faq {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--content-bg);
+  border-radius: 10px;
+}
+
+.testimonial, .story, .faq-item {
+  margin-bottom: 1.5rem;
+  background-color: var(--accent-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: var(--content-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.popup-content button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .trust-badge, .verified-seal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

